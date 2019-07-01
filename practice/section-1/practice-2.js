@@ -1,5 +1,7 @@
-'use strict';
+"use strict";
 
 function collectSameElements(collectionA, collectionB) {
-  return '实现练习要求，并改写该行代码。';
+  return collectionA.filter(item =>
+    collectionB.find(element => element.indexOf(item) > -1)
+  );
 }
